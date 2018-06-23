@@ -1,4 +1,15 @@
+[![Build Status](https://travis-ci.com/Confalone/13-object-relational-mapping.svg?branch=master)](https://travis-ci.com/Confalone/13-object-relational-mapping)
 
+# Lab 13 - Object Relational Mapping
+
+## Models
+
+### Team Model
+
+### Properties
+  * `name ` (required)
+  * `mascot`
+  * `location` (required)
 
 ## Server Endpoints
 ### `/api/v1/team`
@@ -23,3 +34,8 @@
  * `PUT` - test 404, responds with 'not found' for valid requests made with an id that was not found
  * `POST` - test 400, responds with 'bad request' if no request body was provided
  * `POST` - test 200, returns a resource for requests made with a valid body
+
+
+### License
+
+MIT © Tyler Confalone
