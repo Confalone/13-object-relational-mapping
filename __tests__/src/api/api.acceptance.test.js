@@ -30,4 +30,12 @@ describe('API', () => {
       });
   });
 
+  it('gets a 404 response for valid requests made with an id that was not found', () => {
+    return superagent.get('http://localhost:8888/api/v1/bar/invalid')
+      .then(console.log('nice'))
+      .catch(response => {
+        expect(response.status).toEqual(404);
+      });
+  });
+
 });
